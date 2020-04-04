@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bank API</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <section class="logo">
+            <div class="btn">
+                <button>Калькулятор кредитов</button>
+                <button class="log_in">Войти в личный кабинет</button>
+            </div>
+        </section>
+
+        <header>
+            <h1>Курсы валют на сегодня</h1>
+            <section class="container" id="curencyBody">
+                <div class="headTable">
+                    <div><h3>Банк</h3></div>
+                    <div><p>Доллары США</p></div>
+                    <div><p>Фунт стерлингов</p></div>
+                    <div><p>Канадский доллар</p></div>
+                    <div><p>Болгарский лев</p></div>
+                    <div><p>Евро</p></div>
+                </div>
+                <div>    
+                    <div id="curencyBody1"></div>
+                </div>
+                <div>    
+                    <div id="curencyBody2"></div>
+                </div>
+                <div>    
+                    <div id="curencyBody3"></div>
+                </div>
+                <div>    
+                    <div id="curencyBody4"></div>
+                </div>
+                <div>    
+                    <div id="curencyBody5"></div>
+                </div>      
+            </section>
+
+            <section class="container2" id="converter">
+                <h3>Конвертер валют</h3>
+                <form>
+
+                    <select id="inputCurency">
+                        <option>BYN</option>
+                        <option>RUB</option>
+                        <option>PLN</option>
+                        <option>EURO</option>
+                        <option>USD</option>
+                    </select>
+                    <input type="text" placeholder="0.0000" id="inputSum">
+
+                    <select id="inputCurency" disabled>
+                        <option>BYN</option> 
+                    </select>
+                    <input type="text" id="outSum" placeholder="0.0000" readonly>
+
+                </form>
+            </section>
+            </header>
+
+
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
